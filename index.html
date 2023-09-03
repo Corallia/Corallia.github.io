@@ -1,45 +1,433 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="zoom: 85%;">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Corallia SemiRP</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!---------------------------------------------------------------------->    
+    <meta name="title" content="Corallia - Serveur Minecraft Survie SemiRP">
+    <meta name="description" content="Corallia est un serveur Minecraft français créé en 2023 par un groupe d'amis souhaitant créer leur communauté autour d'un serveur RP et d'aventure.">
+    <meta name="keywords" content="Minecraft, Corallia, Corallia SemiRP, Corallia RP, Minecraft SemiRP, Survie, SemiRP, Serveur Français, Corallia Minecraft SemiRP, Corallia Minecraft RP, Corallia RP, Titimousse">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="French">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://corallia.github.io/" />
+    <meta property="og:title" content="Corallia - Survie SemiRP" />
+    <meta property="og:description" content="Corallia est un serveur Minecraft français créé en 2023 par un groupe d'amis souhaitant créer leur communauté autour d'un serveur RP et d'aventure." />
+    <meta property="og:image" content="https://corallia.github.io/img/LogoAlternative2.png" />
+    <!----------------------------------------------------------------------> 
+    <meta name="google-site-verification" content="COlqF_rXH0Idlp-WzngdavRakv7gpbX0MwUaAogmWxo" />
+    <link rel="icon" href="servericon.ico">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/24b38c7cb1.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <!-- For the Player Count -->
+    <script src="https://cdn.jsdelivr.net/gh/leonardosnt/mc-player-counter/dist/mc-player-counter.min.js"></script>
+    <!-- Credits: https://github.com/leonardosnt/mc-player-counter -->
+
+    <link rel="shortcut icon" href="servericon.ico"/>
+
+    <title class='webistetitle'>Corallia - Survie SemiRP</title>                         
+
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f5f5f5;
-            text-align: center;
-            padding: 50px;
-        }
-        
-        .container {
-            background-color: #ffffff;
-            border-radius: 10px;
-            padding: 30px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        h1 {
-            color: #ff4d4d;
-        }
-
-        p {
-            font-size: 18px;
-        }
-
-        .abandoned {
-            font-size: 24px;
-            font-weight: bold;
-            color: #ff4d4d;
+            background-image: url("img/background.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
         }
     </style>
+
 </head>
-<body>
-    <div class="container">
-        <h1>Projet Abandonné</h1>
-        <p class="abandoned">Ce projet a été abandonné.</p>
-        <p>Nous sommes désolés de vous informer que ce projet n'est plus actif.</p>
-        <p>Si vous avez des questions ou des préoccupations, n'hésitez pas à <a href="mailto:Corallia.Titimousse@outlook.com">nous contacter</a>.</p>
-    </div>
-</body>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+
+        <a href=""><img src="img/serverlogo.png" style="width: 50px; padding-right: 10px;"></a> 
+    
+        <a class="navbar-brand" href="">Corallia</a>
+
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="">Accueil
+                    <span class="sr-only">(current)</span>
+                  </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="http://91.174.155.218:33123">WebMap</a>
+            </li>       
+            <li class="nav-item">
+              <a class="nav-link" href="subpages/rules">Règles</a>
+            </li>                         
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Top Navigation End -->
+
+    <!-- Carousel Images Starts here (Inside the "header" tag) -->
+    <header>
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+          <!-- Slide One - Set the background image for this slide in the line below -->
+          <div class="carousel-item active" style="background-image: url(img/slide1.png)">
+            <div class="carousel-caption d-none d-md-block">
+              <h3 class="display-4">Sortie Prochainement !</h3>
+              <p class="lead">Le dévelopement est en cours...</p>
+            </div>
+          </div>
+          <!-- Slide Two - Set the background image for this slide in the line below -->
+          <div class="carousel-item" style="background-image: url(img/slide2.png)">
+            <div class="carousel-caption d-none d-md-block">
+              <h3 class="display-4">Les stations</h3>
+              <p class="lead">Le saviez vous ? <br>Corallia possède de multiples stations de minecart construites par des joueurs !</p>
+            </div>
+          </div>
+          <!-- Slide Three - Set the background image for this slide in the line below -->
+          <div class="carousel-item" style="background-image: url(img/slide3.png)">
+            <div class="carousel-caption d-none d-md-block">
+              <h3 class="display-4">Rejoignez notre Discord !</h3>
+              <p class="lead">"Rejoignez le Discord pour toujours connaître les dernières infos <br>et communiquer avec les autres joueurs.</p>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+      </div>
+    </header>
+    <!-- Carousel Ends here -->
+
+    <!-- Player number count and IP -->
+    <section class="container" style="padding-top: 1rem;">
+      <div class="alert alert-success container" role="alert">
+
+        Vous rêver de créer votre Empire ? Vous êtes au bon endroit ! Rejoignez nous à partir du Discord en bas de la page.</b>.
+
+        Il y a actuellement <b><span data-playercounter-ip="91.174.155.218:32768">0</span></b>  aventuriers en ligne.
+
+      </div>
+   	<div class="alert alert-dark container" role="alert">
+		<b class="text-success">Le serveur tourne en version 1.17.1 et propose deux façons de le rejoindre : <br>soit en utilisant l'adresse IP, soit en utilisant le launcher dédié.</b>
+		<b class="text-info">Vous pouvez le télécharger: <a href="https://www.dropbox.com/scl/fi/2h00oxsc0aurt7lqaeke8/Corallia-Launcher_1.0.1.jar?rlkey=n62xde7rhr2awcg0see4h1y21&dl=1">ici</a></b>
+      	</div>
+    </section>
+    <!-- Main Features Title -->
+    <section class="py-5" style="margin-top: 1rem;">
+      <div class="container">
+        <h4 class="display-4 text-white">Qu'est-ce que Corallia ?</h4>
+        <h5 class="text-light">Corallia est un serveur Survie Semi-RP créé en 2023 pour les joueurs Cracké et Premium, <br>Dans ce serveur les joueurs sont libres de construire ce qui leur chante. <br>Le principe se rapproche d'un serveur faction, <br>les joueurs peuvent créer un empire dans lequel ils peuvent inviter d'autres joueurs, et la principale différence est qu'ils ont la possibilité de créer différents villages et colonies, qu'ils peuvent améliorer au fil du temps.</h5>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section>
+      <div class="container">
+        <div class="row center container" style="margin-right: 0px; margin-left: 0px;">
+          <!-- Item starts -->
+          <div class="textblack main-f-color featureboxes col-sm-12 col-md-4">
+            <img class="img-featureboxes" src="img/features2.png" alt="" srcset="" style="padding-top: 10px;">
+            <h5 class="textblack">Empire</h5>
+            <p class="textblack">
+              Voyagez à la conquette de terre pour créer votre Empire !
+              <br>
+              Devenez le Chef dès aujourd'hui !
+            </p>
+          </div>
+          <!-- Item Ends -->   
+          <div class="textblack main-f-color featureboxes col-sm-12 col-md-4">
+            <img class="img-featureboxes" src="img/features1.png" alt="" srcset="" style="padding-top: 10px;">
+            <h5 class="textblack">Economie</h5>
+            <p class="textblack">
+              Nous travaillons en permanence sur l'économie du serveur pour la maintenir stable et optimisée.
+              <br>
+              Le serveur propose différentes quêtes et moyens de gagner des pièces d'or que vous pouvez utiliser dans le magasin !
+            </p>
+          </div>
+          <!-- Item Ends -->
+          <!-- Item starts -->
+          <div class="textblack main-f-color featureboxes col-sm-12 col-md-4">
+            <img class="img-featureboxes" src="img/features3.png" alt="" srcset="" style="padding-top: 10px;">
+            <h5 class="textblack">Entretien</h5>
+            <p class="textblack"> 
+              Corallia bénéficie de mises à jour régulières, renforçant sa stabilité tout en intégrant de nouvelles fonctionnalités captivantes.
+              <br>
+              Ramène tes potes et viens jouer avec nous !
+              <br>
+            </p>
+          </div>
+          <!-- Item Ends -->                  
+        </div>
+      </div>     
+    </section>
+
+    <!-- Staff Cards Title -->
+    <section class="py-5" style="margin-top: 1rem;">
+      <div class="container">
+        <h4 class="display-4">Rencontrez notre équipe !</h4>
+        <p class="lead">Les membres à contacter en cas de problème !</p>
+      </div>
+    </section>
+
+    <!-- Staff Cards Cards -->
+    <section style="padding-bottom: 3rem;">
+      <div class="container">
+        <div class="card-deck">
+          <div class="row">
+            <!-- Start a Staff Card -->
+            <div class="col-sm-12 col-md-3 col-lg-3">
+              <div class="card border-success">
+                <div class="container">
+                <img class="card-img-top" src="https://minotar.net/avatar/Titimousse" alt="Card image cap">
+                </div>
+                <div class="card-body">
+                  <h4 class="card-title">
+                  <!--Staff Name-->
+                  Titimousse
+                  </h4>
+                  <h6 class="card-title" style="color: blueviolet;">
+                  <!-- Staff Role -->
+                  [Propriétaire et Développeur]
+                  </h6>
+                  <p class="card-text">
+                  <!-- Staff Information -->
+                  Fondateur et développeur du serveur ! 
+                  Il a travaillé ardemment pour rendre votre expérience aussi parfaite que possible.
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">
+                  <!-- Staff Card Bottom -->
+                  Il a rejoint le projet en 2022.
+                  </small>
+                </div>
+              </div>
+            </div>
+            <!-- Ends a Staff Card -->
+            <!-- Start a Staff Card -->
+            <div class="col-sm-12 col-md-3 col-lg-3">           
+              <div class="card border-success">
+                <div class="container">
+                <img class="card-img-top" src="https://minotar.net/avatar/AntoLeGololo" alt="Card image cap">
+                </div>
+                <div class="card-body">
+                  <h4 class="card-title">
+                  <!--Staff Name-->
+                  AntoLeGololo
+                  </h4>
+                  <!-- On style="color: ;" you can change the color. Feel free to use Color codes such REX 👀!-->
+                  <h6 class="card-title" style="color: rgb(0, 0, 175);">
+                  <!-- Staff Role -->
+                  [Modérateur]
+                  </h6>
+                  <p class="card-text">
+                  <!-- Staff Information -->
+                  AntoLeGololo est un Modérateur, il gère le chat du serveur et du Discord.
+                  Il est un membre clé de l'équipe. Sans lui, le serveur ne serait pas ce qu'il est.
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">
+                  <!-- Staff Card Bottom -->
+                  Il a rejoint le projet en 2023.
+                  </small>
+                </div>
+              </div>
+            </div>
+            <!-- Ends a Staff Card -->    
+            <!-- Start a Staff Card -->
+            <div class="col-sm-12 col-md-3 col-lg-3">           
+              <div class="card border-success">
+                <div class="container">
+                <img class="card-img-top" src="https://minotar.net/avatar/Dinnasty1" alt="Card image cap">
+                </div>
+                <div class="card-body">
+                  <h4 class="card-title">
+                  <!--Staff Name-->
+                  Dinnasty1
+                  </h4>
+                  <!-- On style="color: ;" you can change the color. Feel free to use Color codes such REX 👀!-->
+                  <h6 class="card-title" style="color: rgb(0, 0, 175);">
+                  <!-- Staff Role -->
+                  [Modérateur]
+                  </h6>
+                  <p class="card-text">
+                  <!-- Staff Information -->
+                  Dinnasty est un sniper-humain !
+		  En sa présence, aucun hack, cheat ni abus de bug n'est toléré.
+                  Il sait rendre justice, que ce soit dans le chat ou dans la réalité.
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">
+                  <!-- Staff Card Bottom -->
+                  Il a rejoint le projet en 2023.
+                  </small>
+                </div>
+              </div>
+            </div>
+            <!-- Ends a Staff Card -->
+            <!-- Start a Staff Card -->
+            <div class="col-sm-12 col-md-3 col-lg-3">          
+              <div class="card border-success">
+                <div class="container">
+                <img class="card-img-top" src="https://minotar.net/avatar/581f27bf-a912-4792-9582-757b507d3d35" alt="Card image cap">
+                </div>
+                <div class="card-body">
+                  <h4 class="card-title">
+                  <!--Staff Name-->
+                  MClil
+                  </h4>
+                  <!-- On style="color: ;" you can change the color. Feel free to use Color codes such REX 👀!-->
+                  <h6 class="card-title" style="color: rgb(0, 0, 175);">
+                  <!-- Staff Role -->
+                  [Modérateur et Buildeur]
+                  </h6>
+                  <p class="card-text">
+                  <!-- Staff Information -->
+                  Tout comme Dinnasty1, il ne tolerera pas le cheat, il est près à tout pour maintenir le serveur !
+                  Il est aussi un buildeur et a aidé à construire plusieurs batiments.
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">
+                  <!-- Staff Card Bottom -->
+                  Il a rejoin le projet en 2023
+                  </small>
+                </div>
+              </div>
+            </div>
+            <!-- Ends a Staff Card -->
+            <!-- Start a Staff Card -->
+            <div class="col-sm-12 col-md-3 col-lg-3">          
+              <div class="card border-success">
+                <div class="container">
+                <img class="card-img-top" src="https://minotar.net/avatar/pikafeevee" alt="Card image cap">
+                </div>
+                <div class="card-body">
+                  <h4 class="card-title">
+                  <!--Staff Name-->
+                  Pikafeeve
+                  </h4>
+                  <!-- On style="color: ;" you can change the color. Feel free to use Color codes such REX 👀!-->
+                  <h6 class="card-title" style="color: rgb(0, 0, 175);">
+                  <!-- Staff Role -->
+                  [Modérateur]
+                  </h6>
+                  <p class="card-text">
+                  <!-- Staff Information -->
+                  Il est volontaire à aider et sera toujours là en cas de problème sur le serveur.
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">
+                  <!-- Staff Card Bottom -->
+                  Il a rejoin le projet en 2023
+                  </small>
+                </div>
+              </div>
+            </div>
+            <!-- Ends a Staff Card -->                                   
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Staff Cards Card Section-->
+
+    <!-- Footer -->
+    <footer class="page-footer font-small bg-dark pt-4">
+      <!-- Footer Elements -->
+      <div class="container">
+        <!--Grid row-->
+        <div class="row">
+          <!--Grid column-->
+          <div class="col-md-6 mb-4">
+            <h4 style="color: white;">Corallia,</h4>
+            <p class="textgray">
+              le meilleur serveur français Survie Semi-RP,
+              <br>
+	      conçu avec passion par Titimousse. 
+	      À l'origine destiné à être un simple 
+	      serveur survie, Coralia a évolué pour
+	      devenir un serveur de survie Semi-RP
+	      suite à une décision de restructuration.
+            </p>
+          </div>
+          <!--Grid column-->
+          <!--Grid column-->
+          <div class="col-md-6 mb-4">
+            <h4 style="color: white;">Communiquez !</h4><br>
+            <div class="row">
+              <!-- Discord icon -->              
+              <div class="col-sm-12 col-md-3">
+                <a class="medias" href="https://discord.gg/fHFYDDASJd">
+                  <i class="fab fa-discord fa-2x" style="color: #7289DA;"></i>
+                  Discord
+                </a>
+              </div>
+              <!-- Mastodon --> 
+              <div class="col-sm-12 col-md-3">
+                <a class="medias" href="https://mastodon.social/@Corallia">
+                  <i class="fab fa-mastodon fa-2x" style="color: #2b90d9;"></i>
+                  Mastodon
+                </a>
+              </div>  
+              <!-- Mails --> 
+              <div class="col-sm-12 col-md-3">
+                <a class="medias" href="mailto:Corallia.Titimousse@outlook.com?subject=Plainte%2C%20Bugs%2C%20Suggestion%20ou%20Autre%20R%C3%A9clamation&body=Expliquez%20nous%20la%20raison%20de%20votre%20mail%20%3A%0D%0A%0D%0AExpliquez%20nous%20votre%20Probl%C3%A8me%20ou%20Autre%20%3A%0D%0A%0D%0A%0D%0ACe%20mail%20sera%20retransmis%20%C3%A0%20notre%20%C3%A9quipe%2C%20merci%20d'avoir%20fait%20appel%20%C3%A0%20nos%20services.">
+                  <i class="fas fa-envelope fa-2x" style="color: #2b90d9;"></i>
+                  Mails
+                </a>
+              </div>  
+            </div>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </div>
+      <!-- Footer Elements -->
+      <div class="footer-copyright page-footer text-center py-3" style="color: white; background-color: rgb(37, 41, 46);">
+        © 2023 Copyright:
+        <a href="index.html">Corallia</a>
+      </div>
+    </footer>
+    <!-- Footer -->
+    <!-- Staff Cards Propouses -->
+    <style>
+      .card {
+        margin-top: 10px;
+        transition: 0.5s;
+      }
+      
+      .card:hover {
+        transform: scale(1.01);
+        transition: 0.5s;
+      }
+    </style>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS, then Playercount -->
+    <script type="text/javascript" src="js/playercount.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
 </html>
