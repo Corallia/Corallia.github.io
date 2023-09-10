@@ -38,29 +38,26 @@
             background-attachment: fixed;
         }
     </style>
-  <script type="text/javascript">
-    window.addEventListener("load", function() {
-      // Adresse IP que vous souhaitez bloquer
-      var blockedIP = "91.174.155.218"; // Remplacez par l'IP que vous souhaitez bloquer
+<script type="text/javascript">
 
-      // Adresse vers laquelle vous souhaitez rediriger
-      var redirectURL = "https://www.google.com";
+// Block IP address script- By JavaScriptKit.com (http://www.javascriptkit.com)
+// For this and over 400+ free scripts, visit JavaScript Kit- http://www.javascriptkit.com/
+// This notice must stay intact for use.
 
-      // Obtenez l'adresse IP de l'utilisateur
-      var userIP = "";
+//Enter list of banned ips, each separated with a comma:
+var bannedips=["91.174.155.218", "11.11.11.11"]
 
-      fetch("https://api64.ipify.org?format=json")
-        .then(response => response.json())
-        .then(data => {
-          userIP = data.ip;
+var ip = '<!--#echo var="REMOTE_ADDR"-->'
 
-          // Vérifiez si l'adresse IP de l'utilisateur correspond à celle que vous souhaitez bloquer
-          if (userIP === blockedIP) {
-            window.location.href = redirectURL;
-          }
-        });
-    });
-  </script>
+var handleips=bannedips.join("|")
+handleips=new RegExp(handleips, "i")
+
+if (ip.search(handleips)!=-1){ 
+alert("Your IP has been banned from this site. Redirecting...")
+window.location.replace("http://www.google.com")
+}
+
+</script>	
 </head>
   <body>
     <!-- Navigation -->
